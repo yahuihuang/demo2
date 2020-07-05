@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  sitename = '換網站名稱';
+  @Input() sitename = '換網站名稱';
   subtitle = '記載著 Will 在網路世界的學習心得與技術分享';
   fontsize = 12;
   constructor() { }
