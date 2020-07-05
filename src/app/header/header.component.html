@@ -31,7 +31,9 @@
 
       <div class="pull-left">
         <h1><a href="http://blog.miniasp.com/">{{ sitename }}</a></h1>
-        <h3 [textContent]="subtitle" [style.font-size.pt]="fontsize"></h3>
+        <h3 [textContent]="subtitle"
+            [style.font-size.pt]="fontsize"
+            [class.highlight]="fontsize % 2 == 1"></h3>
       </div>
 
       <div id="social-icons" class="pull-right social-icon">
