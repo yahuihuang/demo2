@@ -75,7 +75,8 @@ export class AppComponent {
     this.keyword = str;
   }
 
-  deleteArticle(id: number): void {
-    console.log('id: ' + id);
+  deleteArticle(postTitle: string): void {
+    console.log('postTitle: ' + postTitle);
+    alert('postTitle: ' + postTitle);
   }
 }

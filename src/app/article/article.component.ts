@@ -18,7 +18,7 @@ interface ArticleType {
 export class ArticleComponent implements OnInit {
   @Input() i = 0;
   @Input() item: ArticleType;
-  @Output() delete = new EventEmitter<number>();
+  @Output() delete = new EventEmitter<string>();
 
   constructor() { }
 
@@ -26,7 +26,7 @@ export class ArticleComponent implements OnInit {
   }
 
   doDelete(): void {
-    this.delete.emit(this.item.id);
+    this.delete.emit(this.item.title);
   }
 }
 
