@@ -74,4 +74,8 @@ export class AppComponent {
   doSearch(str: string): void {
     this.keyword = str;
   }
+
+  deleteArticle(id: number): void {
+    console.log('id: ' + id);
+  }
 }

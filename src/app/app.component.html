@@ -8,7 +8,7 @@
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
         <!-- Article START-->
         <app-article *ngFor="let item of data; let i = index"
-          [i]="i" [item]="item">
+          [i]="i" [item]="item" (delete)="deleteArticle($event);">
         </app-article>
         <!-- Article END-->
       </div>
